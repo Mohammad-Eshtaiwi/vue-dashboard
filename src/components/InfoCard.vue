@@ -4,6 +4,7 @@
       <h2 class="info__title">{{ info.title }}</h2>
       <p class="info__amount">{{ info.amount }}</p>
       <p class="info__change">
+        <!-- based pn the status the color will change -->
         <span class="info__status" :data-status="info.status">
           <i class="info__change--icon">
             <font-awesome-icon
@@ -27,6 +28,7 @@ import pickIcon from "../utils/pickIcon"
 export default {
   props: ["info","statusIcon","since"],
   methods: {
+    // return inon based on the title
     pickIcon
   }
 };
